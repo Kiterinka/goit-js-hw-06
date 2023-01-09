@@ -3,7 +3,7 @@ const button = {
     add: document.querySelector("[data-action='increment']"),
     span: document.querySelector("#value"),
 };
-let counterValue = Number(0);
+let counterValue = 0;
 
 const increment = () => {
     counterValue += 1;

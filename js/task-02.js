@@ -8,10 +8,10 @@ const ingredients = [
 ];
 const listEl = document.querySelector('#ingredients');
 
-const liEl = ingredients.map(ingredients => {
-  const li = document.createElement('li');
-  li.classList.add('item');
-  li.textContent = ingredients;
-console.log(li);
+const elements = ingredients.map(option => {
+  const liEl = document.createElement('li');
+  liEl.classList.add('item');
+  liEl.textContent = option;
+return liEl;
 })
-
+listEl.append(...elements);
